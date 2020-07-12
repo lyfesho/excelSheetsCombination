@@ -1,12 +1,6 @@
-import xlrd
-from xlutils.copy import copy
-from xlwt import Workbook
 import xlwings as xw
-
 from tkinter import *
 from tkinter.filedialog import askopenfilename
-from tkinter.messagebox import showinfo
-
 from icon import Icon
 
 import base64
@@ -142,12 +136,3 @@ if __name__ == '__main__':
     btn_exe = Button(frame_exe, width=20, text="开始工作啦！", font=("宋体", 9),
                      command=lambda: insert_excel(entry1.get(), entry2.get(), entry3.get())).pack(fill=X, padx=10)
     frameT.mainloop()
-
-    #input
-    #inserted_num = 3 #插在第1个文件后面
-
-    #existed_excel_name = 'G:\档案工作\\2018归档记录\\2018移交目录\\2018.11.16\\青岛地铁1号线卷内目录.xls'
-    #inserted_excel_name = 'G:\档案工作\\2018归档记录\\2018移交目录\\2018.11.16\\黄石海洲卷内目录.xls'
-
-    #将inserted_excel_name插入existed_excel_name的第inserted_num sheet前面
-    #insert_excel(inserted_num, existed_excel_name, inserted_excel_name)
